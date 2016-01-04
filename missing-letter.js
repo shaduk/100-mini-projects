@@ -16,9 +16,6 @@ function fearNotLetter(str) {
          {
             ans = String.fromCharCode(first);
          }
-       
-  
-          
         
     }
   return ans;
