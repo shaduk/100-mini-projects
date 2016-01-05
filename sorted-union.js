@@ -3,7 +3,7 @@ function unite(arr1) {
   var array = [];
   for(var k = 0; k < args.length; k++)
     {
-      array.concat(args[i]);
+      array = array.concat(args[k]);
     }
   var ans = [];
   for(var i = 0; i < array.length; i++)
@@ -15,7 +15,7 @@ function unite(arr1) {
             if(array[i] === ans[j])
               {
               count = 1;
-              break;
+              
               }
           }
        if(count === 0)
