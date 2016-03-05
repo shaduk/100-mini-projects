@@ -17,10 +17,11 @@ function check(str)
         }
         else if(str[i] == ")" || str[i] == "}" || str[i] == "]")
         {
-        	if(stack.length == 0 || map[str[i]] != stack[stack.length-1])
+            var stacklen = stack.length;
+        	if(stacklen == 0 || map[str[i]] != stack[stacklen-1])
                 return false
             else
-                stack.pop()
+                stack.pop();
         }
     }
     if(stack.length == 0)
